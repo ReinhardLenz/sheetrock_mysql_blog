@@ -5,9 +5,8 @@
 
     error_reporting(0);
     mysqli_report(MYSQLI_REPORT_OFF);
-    $mysqli = new mysqli('db1.n.kapsi.fi:3306','raikkulenz', 'xNYvFvQzMY','raikkulenz');
+    $mysqli = new mysqli('db1.n.kapsi.fi:3306','name', 'password','name');
     
-    //$mysqli = new mysqli('127.0.0.1','shaun', 'Uintikoulu331','packetcode-tut');
     if ($mysqli->connect_errno) {
         throw new RuntimeException('mysqli connection error: ' . $mysqli->connect_error);
     }
